@@ -1,0 +1,23 @@
+== README
+
+Yet Another Twitter Client application.
+
+This application has the following features:
+
+* User can login to existing account
+
+* User can edit his account
+
+* Add friend (from other users)
+
+* Remove friend (from friend list)
+
+* Post a message
+
+* Show all messages from friends
+
+* Ability to lookup another user and see his posts
+
+* A user can block another user, so that other other user cannot see his posts or add him as a friend
+
+* Users can comment on posts
