@@ -40,4 +40,5 @@ gem 'spring',        group: :development
 
 # Add omniauth and twitter
 gem 'omniauth', '~> 1.2.1'
-gem 'omniauth-twitter', github: 'arunagw/omniauth-twitter'
+gem 'omniauth-twitter', '~> 1.0.1'
+gem 'twitter', '~> 5.9.0'
