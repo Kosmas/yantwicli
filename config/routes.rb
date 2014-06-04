@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'users/tweets'
+
   get 'friends/index'
 
   get 'friends/list'
