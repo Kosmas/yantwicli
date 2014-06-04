@@ -1,0 +1,5 @@
+<%= form_tag( controller: 'users', action: 'post_tweet') do %>
+  <%= label_tag(:post, 'Compose new tweet') %><br />
+  <%= text_area_tag(:post, nil, size: '44x6') %><br />
+  <%= submit_tag('Update') %>
+<% end %>
