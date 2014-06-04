@@ -3,7 +3,10 @@
 <div>
   <ul>
     <% @friends.each do |friend| %>
-      <li><%= friend.name %></li>
+      <li>
+        <%= friend.name %>
+        <%= link_to 'Remove', friends_remove_friend_path(id: friend.id), method: :delete, data: { confirm: 'Are you sure?' } %>
+      </li>
     <% end %>
   </ul>
 </div>

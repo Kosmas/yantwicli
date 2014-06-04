@@ -4,8 +4,9 @@ Rails.application.routes.draw do
   post 'users/post_tweet'
 
   get 'friends/index'
-
   get 'friends/list'
+  delete 'friends/remove_friend'
+  
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
