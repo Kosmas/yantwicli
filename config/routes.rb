@@ -4,6 +4,8 @@ Rails.application.routes.draw do
   post 'users/post_tweet'
   get 'users/edit_profile'
   post 'users/update_profile'
+  get 'users/suggestions'
+  post 'users/add_friend'
 
   get 'friends/index'
   get 'friends/list'

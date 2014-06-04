@@ -1,0 +1,7 @@
+<h2>Suggestions</h2>
+
+<ul>
+  <% @suggestions.each do |sug| %>
+    <li><%= sug.name %> <%= link_to 'Add Friend', users_add_friend_path(uid: sug.id, follow: true), method: 'post'  %></li>
+  <% end %>
+</ul>
