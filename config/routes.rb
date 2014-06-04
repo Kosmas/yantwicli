@@ -2,6 +2,8 @@ Rails.application.routes.draw do
   get 'users/tweets'
   get 'users/new_tweet'
   post 'users/post_tweet'
+  get 'users/edit_profile'
+  post 'users/update_profile'
 
   get 'friends/index'
   get 'friends/list'

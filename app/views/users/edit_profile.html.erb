@@ -1,0 +1,12 @@
+<h3>Edit your profile</h3>
+
+<%= form_tag(controller: 'users', action: 'update_profile', method: 'post') do %>
+  <%= label_tag :name, 'Name' %>
+  <%= text_field_tag :name, @user.screen_name %><br />
+  <%= label_tag :location, 'Location' %>
+  <%= text_field_tag :location, @user.location %><br />
+  <%= label_tag :description, 'Description' %>
+  <%= text_field_tag :description, @user.description %><br />
+
+  <%= submit_tag('Update') %>
+<% end %>
