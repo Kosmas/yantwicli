@@ -2,6 +2,6 @@
 
 <ul>
   <% @users.each do |u| %>
-    <li><%= u.name %> - <%= u.screen_name %></li>
+    <li><%= u.name %> - <%= u.screen_name %> <%= link_to 'Show posts', users_show_found_user_tweets_path(user_id: u.id) %> </li>
   <% end %>
 </ul>

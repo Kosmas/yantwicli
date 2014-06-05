@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   post 'users/add_friend'
   get 'users/search'
   post 'users/search_results'
+  get 'users/show_found_user_tweets'
 
   get 'friends/index'
   get 'friends/list'

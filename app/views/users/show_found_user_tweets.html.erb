@@ -1,0 +1,7 @@
+<h2>User messages</h2>
+
+<ul>
+  <% @user_tweets.each do |t| %>
+    <li><%= t.text %></li>
+  <% end %>
+</ul>
