@@ -42,3 +42,6 @@ gem 'spring',        group: :development
 gem 'omniauth', '~> 1.2.1'
 gem 'omniauth-twitter', '~> 1.0.1'
 gem 'twitter', '~> 5.9.0'
+
+# Addd bootstrap
+gem 'anjlab-bootstrap-rails', '~> 3.0.3.0', require: 'bootstrap-rails'
