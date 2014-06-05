@@ -1,0 +1,7 @@
+<h2>The following users have been found</h2>
+
+<ul>
+  <% @users.each do |u| %>
+    <li><%= u.name %> - <%= u.screen_name %></li>
+  <% end %>
+</ul>

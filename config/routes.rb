@@ -6,12 +6,14 @@ Rails.application.routes.draw do
   post 'users/update_profile'
   get 'users/suggestions'
   post 'users/add_friend'
+  get 'users/search'
+  post 'users/search_results'
 
   get 'friends/index'
   get 'friends/list'
   delete 'friends/remove_friend'
   get 'friends/messages'
-  
+
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

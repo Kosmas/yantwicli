@@ -1,0 +1,8 @@
+<h2>Find a user</h2>
+
+<%= form_tag(controller: 'users', action: 'search_results', method: 'get') do %>
+  <%= label_tag :name, 'Enter user Name' %>
+  <%= text_field_tag :name, nil %><br />
+
+  <%= submit_tag 'Search' %>
+<% end %>
