@@ -21,12 +21,15 @@ class FriendsController < ApplicationController
       config.access_token_secret  = "#{current_user.oauth_secret}"
     end
 
-    if client.friendship.destroy(params[:id])
+    # TODO: Does it work? Need to investigate
+    # no error produced but user not removed
+    if client.unfollow(params)
       flash[:message] = 'User has been removed'
+      redirect_to root_path
     else
       flash[:error] = 'User cannot be removed'
+      render 'list'
     end
-    render 'list'
   end
 
 end

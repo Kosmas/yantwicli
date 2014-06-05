@@ -5,7 +5,7 @@
     <% @friends.each do |friend| %>
       <li>
         <%= friend.name %>
-        <%= link_to 'Remove', friends_remove_friend_path(id: friend.id), method: :delete, data: { confirm: 'Are you sure?' } %>
+        <%= link_to 'Remove', friends_remove_friend_path(user_id: friend.id), method: :delete, data: { confirm: 'Are you sure?' } %>
       </li>
     <% end %>
   </ul>
