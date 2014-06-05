@@ -21,3 +21,17 @@ This application has the following features:
 * A user can block another user, so that other other user cannot see his posts or add him as a friend
 
 * Users can comment on posts
+
+
+== Usage instructions
+
+To be able to use the application you would need to register your application with twitter here <a href="https://apps.twitter.com/">https://apps.twitter.com/</a>.
+
+You would then need to create a file called config/secrets.yml and copy the API keys from the above page.
+
+Your config/secrets.yml file should look like:
+
+development:
+  secret_key_base: your_rails_app_secret_key
+  twitter_consumer_key: your_twitter_API_key
+  twitter_consumer_secret: your_twitter_API_secret
