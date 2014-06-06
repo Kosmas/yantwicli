@@ -2,6 +2,6 @@
 
 <ul>
   <% @messages.each do |msg| %>
-    <li><%= msg.text %></li>
+    <li><%= msg.user.screen_name %> - <%= msg.text %> <%= link_to 'Reply', friends_reply_tweet_path(screen_name: msg.user.screen_name) %></li>
   <% end %>
 </ul>

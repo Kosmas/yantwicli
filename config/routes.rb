@@ -16,6 +16,8 @@ Rails.application.routes.draw do
   get 'friends/list'
   delete 'friends/remove_friend'
   get 'friends/messages'
+  get 'friends/reply_tweet'
+  post 'friends/post_reply_tweet'
 
 
   # The priority is based upon order of creation: first created -> highest priority.

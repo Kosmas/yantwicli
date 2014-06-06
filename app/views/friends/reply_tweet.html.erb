@@ -1,0 +1,5 @@
+<%= form_tag(controller: 'friends', action: 'post_reply_tweet', method: 'post') do %>
+  <%= label_tag(:message, 'Reply') %><br />
+  <%= text_area_tag(:message, @screen_name, size: '44x6') %><br />
+  <%= submit_tag('Reply') %>
+<% end %>
