@@ -124,4 +124,15 @@ class UsersController < ApplicationController
 
     @user_tweets = client.user_timeline(user_id: params[:user_id])
   end
+
+  def blocked
+    client = Twitter::REST::Client.new do |config|
+      config.consumer_key         = Rails.application.secrets.twitter_consumer_key
+      config.consumer_secret      = Rails.application.secrets.twitter_consumer_secret
+      config.access_token         = "#{current_user.oauth_token}"
+      config.access_token_secret  = "#{current_user.oauth_secret}"
+    end
+
+    @blocked_users = client.blocked
+  end
 end

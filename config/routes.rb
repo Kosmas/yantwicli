@@ -9,6 +9,7 @@ Rails.application.routes.draw do
   get 'users/search'
   post 'users/search_results'
   get 'users/show_found_user_tweets'
+  get 'users/blocked'
 
   get 'friends/index'
   get 'friends/list'
