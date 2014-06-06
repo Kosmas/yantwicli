@@ -10,6 +10,7 @@ Rails.application.routes.draw do
   post 'users/search_results'
   get 'users/show_found_user_tweets'
   get 'users/blocked'
+  post 'users/block'
 
   get 'friends/index'
   get 'friends/list'

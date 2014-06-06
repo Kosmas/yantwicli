@@ -6,6 +6,7 @@
       <li>
         <%= friend.name %>
         <%= link_to 'Remove', friends_remove_friend_path(user_id: friend.id), method: :delete, data: { confirm: 'Are you sure?' } %>
+        <%= link_to 'Block', users_block_path(user_id: friend.id), method: :post, data: { confirm: 'Are you sure?' } %>
       </li>
     <% end %>
   </ul>
