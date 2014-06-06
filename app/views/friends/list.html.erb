@@ -1,14 +1,13 @@
-<h2>My friends</h2>
-
-<div>
-  <ul>
-    <% @friends.each do |friend| %>
-      <li>
-        <%= friend.name %>
-        <%= link_to 'Remove', friends_remove_friend_path(user_id: friend.id), method: :delete, data: { confirm: 'Are you sure?' } %>
-        <%= link_to 'Block', users_block_path(user_id: friend.id), method: :post, data: { confirm: 'Are you sure?' } %>
-      </li>
-    <% end %>
-  </ul>
+<div class="page-header">
+  <h3>My friends</h3>
 </div>
 
+<ul class="list-group">
+  <% @friends.each do |friend| %>
+    <li class="list-group-item">
+      <%= friend.name %>
+      <%= link_to 'Remove', friends_remove_friend_path(user_id: friend.id), method: :delete, data: { confirm: 'Are you sure?' } %>
+      <%= link_to 'Block', users_block_path(user_id: friend.id), method: :post, data: { confirm: 'Are you sure?' } %>
+    </li>
+  <% end %>
+</ul>

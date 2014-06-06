@@ -1,7 +1,9 @@
-<h2>Suggestions</h2>
+<div class="page-header">
+  <h3>Suggestions</h3>
+</div>
 
-<ul>
+<ul class="list-group">
   <% @suggestions.each do |sug| %>
-    <li><%= sug.name %> <%= link_to 'Add Friend', users_add_friend_path(uid: sug.id, follow: true), method: 'post'  %></li>
+    <li class="list-group-item"><%= sug.name %> <%= link_to 'Add Friend', users_add_friend_path(uid: sug.id, follow: true), method: 'post'  %></li>
   <% end %>
 </ul>

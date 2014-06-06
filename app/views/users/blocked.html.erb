@@ -1,7 +1,9 @@
-<h2>Blocked users</h2>
+<div class="page-header">
+  <h3>Blocked users</h3>
+</div>
 
-<ul>
+<ul class="list-group">
   <% @blocked_users.each do |bu| %>
-    <li><%= bu.name %></li>
+    <li class="list-group-item"><%= bu.name %></li>
   <% end %>
 </ul>

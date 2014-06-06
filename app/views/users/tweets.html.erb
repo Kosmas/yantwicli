@@ -1,7 +1,11 @@
-<h2>My tweets</h2>
+<div class="page-header">
+  <h3>My tweets</h3>
+</div>
 
-<% @tweets.each do |t| %>
-  <div>
-    <%= t.text %>
-   </div>
-<% end %>
+<ul class="list-group">
+  <% @tweets.each do |t| %>
+    <li class="list-group-item">
+      <%= t.text %>
+   </li>
+  <% end %>
+</ul>
