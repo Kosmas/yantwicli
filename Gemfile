@@ -39,7 +39,7 @@ gem 'capistrano-rails', '~> 1.1.1', group: :development
 # gem 'debugger', group: [:development, :test]
 
 # Add omniauth and twitter
-gem 'omniauth', '~> 1.2.1'
+gem 'omniauth', '~> 1.4.2'
 gem 'omniauth-twitter', '~> 1.0.1'
 gem 'twitter', '~> 5.9.0'
 
